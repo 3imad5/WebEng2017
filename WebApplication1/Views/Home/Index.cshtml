@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    
+
+    <h2>@ViewData["greetingMsg"]</h2>
+    <h2>The time is @ViewData["time"] on @ViewData["date"]</h2>
+    <h2>@ViewData["daysLeftInYear"] more days until @ViewData["year"]</h2>
+    <br /> 
+    <a asp-action="Index" asp-controller="Persons" class="btn btn-info">Persons List</a>
+</div>
